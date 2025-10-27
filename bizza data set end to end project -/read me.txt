@@ -1,0 +1,64 @@
+
+📊 Pizza Sales Dashboard (Power BI Project)
+🧩 Project Overview
+This project analyzes pizza sales performance using real transactional data.
+
+
+The goal is to identify sales trends, top-performing products, and customer behavior to support better business decisions for a pizza restaurant.
+
+The dashboard provides a clear overview of revenue, orders, and sales patterns across different time periods and product Type & size..
+
+
+
+🎯 Objectives
+
+- Understand total sales performance by day, time, and pizza Type & size.
+
+- Identify best-selling pizzas and those with low demand.
+
+- Analyze sales by time of day (morning, noon, evening, night) to optimize staffing and promotions.
+
+- Provide actionable insights to improve inventory planning and marketing strategies.
+
+🛠️ Tools & Techniques
+
+- Power BI for data visualization and dashboard creation
+
+- Excel / CSV dataset as data source
+
+- Data Cleaning & Transformation using Power Query
+
+- DAX measures for calculating total revenue, average order value, and sales by Type & size.
+
+
+📈 Key Insights
+
+- Evening & Midday hours show the highest order volume and revenue.
+
+- Classic and Supreme pizzas are the top-selling categories.
+
+- Despite fewer orders, Large-sized pizzas contribute the most to total revenue.
+
+- Extend evening & Midday staff shifts and introduce bundle offers.
+- Customer Behavior at Weekends show 17% higher average order sold &value.
+
+🚀 Future Enhancements
+
+- Add customer segmentation to understand repeat buyers.
+
+- Integrate monthly trend forecasting using Power BI predictive visuals.
+
+
+👨‍💻 Created by
+
+Abd Alkreem – Data Analyst (Sudan)
+Focused on health insurance and business analytics, applying data-driven insights to improve decision-making and efficiency.
+
+
+
+1-creat new colomn to convert order time to hour then creat another column named time period (mornring,noon...ets)
+2-insert day&Month column
+3-creat tow conditinoal columns named Day&Month Number
+4-changed thevalues of pizza size (L,M,S,XL,XXL)To(Larg,Medium,Regular,Larg,X-Larg)
+
+-create measures(Avg Order Amount = DIVIDE( [Total Revenue],[Total Orders]),Avg Pizzas Per Order = DIVIDE([Total Pizzas Sold],[Total Orders]),Total Orders = DISTINCTCOUNT('bizza data set end to end project -'[order_id]),Total Pizzas Sold = SUM('bizza data set end to end project -'[quantity]),Total Revenue = SUM('bizza data set end to end project -'[total_price]),
